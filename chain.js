@@ -1,8 +1,10 @@
 window.onload = function() {
-  const canvas = document.getElementById("canvas");
+  const canvas = document.createElement("canvas");
   const context = canvas.getContext("2d");
   const colors = ["blue", "green", "orange", "red", "#2266FF"];
   let isMouseDown = false;
+
+  document.body.appendChild(canvas);
 
   canvas.width  = 600;
   canvas.height = 750;
